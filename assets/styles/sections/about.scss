@@ -151,6 +151,12 @@ $progress-bar-colors: (
     @include circular-progress-animation-keyframes($progress: 0, $degree: 0, $keyframes: 20);
   }
 
+  .badge-image {
+    max-width: 150px;
+    max-height: 150px;
+    margin: auto;
+  }
+
   @include media('<=large') {
     .circular-progress {
       margin-bottom: 20px;
@@ -166,11 +172,19 @@ $progress-bar-colors: (
       width: 135px;
       height: 135px;
     }
+    .badge-image {
+      max-width: 135px;
+      max-height: 135px;
+    }
   }
   @include media('<=small') {
     .circular-progress {
       width: 150px;
       height: 150px;
+    }
+    .badge-image {
+      max-width: 150px;
+      max-height: 150px;
     }
 
     .circular-progress .circular-progress-value {
@@ -202,6 +216,10 @@ $progress-bar-colors: (
         border-top-left-radius: 100px;
         border-bottom-left-radius: 100px;
       }
+    }
+    .badge-image {
+      max-width: 200px;
+      max-height: 200px;
     }
   }
 }
